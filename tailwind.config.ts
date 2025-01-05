@@ -9,8 +9,8 @@ export default {
   theme: {
     extend: {
       colors: {
-        background: "var(--background)",
-        foreground: "var(--foreground)",
+        "jindo-yellow": "#FFCC00",
+        "jindo-black": "#333333",
       },
     },
   },
