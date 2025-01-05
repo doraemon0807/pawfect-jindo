@@ -1,11 +1,6 @@
-import Footer from "@/components/footer";
-import NavBar from "@/components/navBar";
-
 export default function Home() {
   return (
     <div className="font-sans bg-gray-50">
-      <NavBar />
-
       {/* Hero Section */}
       <section className="relative h-[500px] bg-gray-300">
         <div className="absolute inset-0 bg-black opacity-50"></div>
@@ -114,8 +109,6 @@ export default function Home() {
           </div>
         </div>
       </section>
-
-      <Footer />
     </div>
   );
 }

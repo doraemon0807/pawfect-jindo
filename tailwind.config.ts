@@ -11,6 +11,7 @@ export default {
       colors: {
         "jindo-yellow": "#FFCC00",
         "jindo-black": "#333333",
+        "jindo-green": "#16a34a",
       },
     },
   },
