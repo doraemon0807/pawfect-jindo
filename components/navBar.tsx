@@ -24,10 +24,10 @@ export default function NavBar() {
         </Link>
 
         {/* Navigation */}
-        <nav className="space-x-6 text-gray-700 font-semibold flex items-center">
+        <nav className="space-x-6 text-jindo-dark-gray font-semibold flex items-center">
           <Link
             href={`${aboutPath}`}
-            className={`hover:text-yellow-500 pb-2 ${
+            className={`hover:text-jindo-yellow pb-2 ${
               path === aboutPath ? "border-b-4" : ""
             }`}
           >
@@ -35,7 +35,7 @@ export default function NavBar() {
           </Link>
           <Link
             href={`${adoptionPath}`}
-            className={`hover:text-yellow-500 pb-2 ${
+            className={`hover:text-jindo-yellow pb-2 ${
               path === adoptionPath ? "border-b-4" : ""
             }`}
           >
@@ -43,7 +43,7 @@ export default function NavBar() {
           </Link>
           <Link
             href={`${dogsPath}`}
-            className={`hover:text-yellow-500 pb-2 ${
+            className={`hover:text-jindo-yellow pb-2 ${
               path === dogsPath ? "border-b-4" : ""
             }`}
           >
@@ -51,17 +51,15 @@ export default function NavBar() {
           </Link>
           <Link
             href={`${contactPath}`}
-            className={`hover:text-yellow-500 pb-2 ${
+            className={`hover:text-jindo-yellow pb-2 ${
               path === contactPath ? "border-b-4" : ""
             }`}
           >
             Contact Us
           </Link>
 
-          <Link href={`${donatePath}`} className="text-gray-50 pb-2">
-            <div className="bg-green-700 px-3 py-2 rounded-md hover:bg-green-600">
-              Donate
-            </div>
+          <Link href={`${donatePath}`} className="text-jindo-light-gray pb-2">
+            <div className="button">Donate</div>
           </Link>
         </nav>
       </div>

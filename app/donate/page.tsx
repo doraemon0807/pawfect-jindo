@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export const metadata = {
   title: "Donate",
 };
@@ -35,10 +37,10 @@ export default function Adopt() {
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
       {/* Hero Section */}
       <section className="text-center mb-12">
-        <h1 className="text-4xl font-bold text-gray-800">
+        <h1 className="text-4xl font-bold text-jindo-darker-gray">
           Support Our Mission
         </h1>
-        <p className="mt-4 text-lg text-gray-600">
+        <p className="mt-4 text-lg text-jindo-gray">
           Your generous contributions help us rescue and care for Jindo dogs in
           need.
         </p>
@@ -55,16 +57,14 @@ export default function Adopt() {
             <p className="text-2xl font-bold text-primary mb-2">
               {option.amount}
             </p>
-            <p className="text-gray-600 mb-4">{option.description}</p>
-            <button className="bg-jindo-black text-white py-2 px-4 rounded-md hover:bg-jindo-green">
-              Donate Now
-            </button>
+            <p className="text-jindo-gray mb-4">{option.description}</p>
+            <button className="button">Donate Now</button>
           </div>
         ))}
       </section>
 
       {/* Custom Donation Form */}
-      <section className="bg-gray-50 p-8 rounded-lg shadow-lg max-w-3xl mx-auto">
+      <section className="bg-jindo-lighter-gray p-8 rounded-lg shadow-lg max-w-3xl mx-auto">
         <h2 className="text-2xl font-semibold mb-6 text-center">
           Make a Custom Donation
         </h2>
@@ -72,7 +72,7 @@ export default function Adopt() {
           <div className="mb-4">
             <label
               htmlFor="amount"
-              className="block text-sm font-medium text-gray-700"
+              className="block text-sm font-medium text-jindo-dark-gray"
             >
               Donation Amount
             </label>
@@ -87,7 +87,7 @@ export default function Adopt() {
           <div className="mb-4">
             <label
               htmlFor="name"
-              className="block text-sm font-medium text-gray-700"
+              className="block text-sm font-medium text-jindo-dark-gray"
             >
               Your Name
             </label>
@@ -102,7 +102,7 @@ export default function Adopt() {
           <div className="mb-4">
             <label
               htmlFor="email"
-              className="block text-sm font-medium text-gray-700"
+              className="block text-sm font-medium text-jindo-dark-gray"
             >
               Your Email
             </label>
@@ -114,10 +114,7 @@ export default function Adopt() {
             />
           </div>
 
-          <button
-            type="submit"
-            className="w-full bg-jindo-black text-white py-2 px-4 rounded-md hover:bg-jindo-green"
-          >
+          <button type="submit" className="w-full button">
             Donate Now
           </button>
         </form>
@@ -126,15 +123,12 @@ export default function Adopt() {
       {/* Call to Action */}
       <section className="mt-12 text-center">
         <h2 className="text-2xl font-semibold mb-4">Other Ways to Help</h2>
-        <p className="text-gray-600 mb-6">
+        <p className="text-jindo-gray mb-6">
           You can also support us by volunteering or spreading the word.
         </p>
-        <a
-          href="/contact-us"
-          className="bg-jindo-black text-white px-6 py-3 rounded-md hover:bg-jindo-green"
-        >
+        <Link href="/contact-us" className="button">
           Get Involved
-        </a>
+        </Link>
       </section>
     </div>
   );

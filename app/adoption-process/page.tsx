@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export const metadata = {
   title: "Adoption Process",
 };
@@ -47,8 +49,10 @@ export default function AdoptionProcess() {
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
       {/* Hero Section */}
       <section className="text-center mb-12">
-        <h1 className="text-4xl font-bold text-gray-800">Adoption Process</h1>
-        <p className="mt-4 text-lg text-gray-600">
+        <h1 className="text-4xl font-bold text-jindo-darker-gray">
+          Adoption Process
+        </h1>
+        <p className="mt-4 text-lg text-jindo-gray">
           Our streamlined adoption process ensures every dog finds the perfect
           home.
         </p>
@@ -64,7 +68,7 @@ export default function AdoptionProcess() {
             <div className="text-4xl mb-4 md:mb-0">{step.icon}</div>
             <div>
               <h2 className="text-xl font-semibold mb-2">{step.title}</h2>
-              <p className="text-gray-600">{step.description}</p>
+              <p className="text-jindo-gray">{step.description}</p>
             </div>
           </div>
         ))}
@@ -73,15 +77,12 @@ export default function AdoptionProcess() {
       {/* Call to Action */}
       <section className="mt-12 text-center">
         <h2 className="text-2xl font-semibold mb-4">Ready to Adopt?</h2>
-        <p className="text-gray-600 mb-6">
+        <p className="text-jindo-gray mb-6">
           Start your adoption journey by filling out our application form today.
         </p>
-        <a
-          href="/adopt-dog"
-          className="bg-jindo-black text-white px-6 py-3 rounded-md hover:bg-jindo-green"
-        >
+        <Link href="/adopt-dog" className="button">
           Start Application
-        </a>
+        </Link>
       </section>
     </div>
   );

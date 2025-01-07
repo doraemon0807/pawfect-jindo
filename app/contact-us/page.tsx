@@ -7,8 +7,10 @@ export default function ContactUs() {
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
       {/* Hero Section */}
       <section className="text-center mb-12">
-        <h1 className="text-4xl font-bold text-gray-800">Contact Us</h1>
-        <p className="mt-4 text-lg text-gray-600">
+        <h1 className="text-4xl font-bold text-jindo-darker-gray">
+          Contact Us
+        </h1>
+        <p className="mt-4 text-lg text-jindo-gray">
           We'd love to hear from you. Reach out to us anytime!
         </p>
       </section>
@@ -18,19 +20,19 @@ export default function ContactUs() {
         {/* Address */}
         <div className="p-6 border rounded-lg shadow">
           <h2 className="text-xl font-semibold mb-2">Our Address</h2>
-          <p className="text-gray-600">123 Jindo Street, City, State, ZIP</p>
+          <p className="text-jindo-gray">123 Jindo Street, City, State, ZIP</p>
         </div>
 
         {/* Email */}
         <div className="p-6 border rounded-lg shadow">
           <h2 className="text-xl font-semibold mb-2">Email Us</h2>
-          <p className="text-gray-600">contact@adoptjindo.org</p>
+          <p className="text-jindo-gray">contact@adoptjindo.org</p>
         </div>
 
         {/* Phone */}
         <div className="p-6 border rounded-lg shadow">
           <h2 className="text-xl font-semibold mb-2">Call Us</h2>
-          <p className="text-gray-600">+1 (234) 567-890</p>
+          <p className="text-jindo-gray">+1 (234) 567-890</p>
         </div>
       </section>
 
@@ -43,7 +45,7 @@ export default function ContactUs() {
           <div className="mb-4">
             <label
               htmlFor="name"
-              className="block text-sm font-medium text-gray-700"
+              className="block text-sm font-medium text-jindo-dark-gray"
             >
               Your Name
             </label>
@@ -58,7 +60,7 @@ export default function ContactUs() {
           <div className="mb-4">
             <label
               htmlFor="email"
-              className="block text-sm font-medium text-gray-700"
+              className="block text-sm font-medium text-jindo-dark-gray"
             >
               Your Email
             </label>
@@ -73,7 +75,7 @@ export default function ContactUs() {
           <div className="mb-4">
             <label
               htmlFor="message"
-              className="block text-sm font-medium text-gray-700"
+              className="block text-sm font-medium text-jindo-dark-gray"
             >
               Your Message
             </label>
@@ -85,10 +87,7 @@ export default function ContactUs() {
             />
           </div>
 
-          <button
-            type="submit"
-            className="w-full bg-jindo-black text-white py-2 px-4 rounded-md hover:bg-jindo-green"
-          >
+          <button type="submit" className="w-full button">
             Send Message
           </button>
         </form>
