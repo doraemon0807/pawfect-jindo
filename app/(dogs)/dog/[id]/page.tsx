@@ -1,9 +1,17 @@
 import { API_URL, Dog } from "@/app/find-a-dog/page";
 import Link from "next/link";
 
-export const metadata = {
-  title: "Dog Profile",
-};
+interface IParams {
+  params: { id: string }; // This ti
+}
+
+export async function generateMetadata({ params }: IParams) {
+  const { id } = await params;
+  const dog: Dog = await getDog(id);
+  return {
+    title: dog.title,
+  };
+}
 
 // const dogData: Dog[] = [
 //   {
@@ -18,18 +26,13 @@ export const metadata = {
 //   },
 // ];
 
-interface IParams {
-  params: { id: string };
-}
-
-async function getDog(id: string) {
+export async function getDog(id: string) {
   await new Promise((resolve) => setTimeout(resolve, 2000));
   return fetch(`${API_URL}/${id}`).then((response) => response.json());
 }
 
 export default async function DogProfile({ params }: IParams) {
   const { id } = await params;
-
   const dog: Dog = await getDog(id);
 
   return (
