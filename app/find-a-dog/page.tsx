@@ -6,8 +6,6 @@ export const metadata = {
   title: "Find a Dog",
 };
 
-export const API_URL = "https://nomad-movies.nomadcoders.workers.dev/movies";
-
 export interface Dog {
   adult: boolean;
   backdrop_path: string;

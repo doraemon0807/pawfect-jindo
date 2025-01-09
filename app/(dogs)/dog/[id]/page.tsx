@@ -1,8 +1,9 @@
-import { API_URL, Dog } from "@/app/find-a-dog/page";
+import { API_URL } from "@/app/constants";
+import { Dog } from "@/app/find-a-dog/page";
 import Link from "next/link";
 
 interface IParams {
-  params: { id: string }; // This ti
+  params: { id: string }; // This id comes from [id] in the path
 }
 
 export async function generateMetadata({ params }: IParams) {

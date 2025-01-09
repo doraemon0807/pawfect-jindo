@@ -1,4 +1,5 @@
-import { API_URL, Dog } from "@/app/find-a-dog/page";
+import { API_URL } from "@/app/constants";
+import { Dog } from "@/app/find-a-dog/page";
 import Link from "next/link";
 
 async function getDogs() {
@@ -40,7 +41,7 @@ export default async function DogList() {
               key={dog.id}
               className="border rounded-lg shadow overflow-hidden"
             >
-              <Link href={`/dog/${dog.id}`} className="relative">
+              <Link prefetch href={`/dog/${dog.id}`} className="relative">
                 <img
                   src={dog.poster_path}
                   alt={dog.title}
