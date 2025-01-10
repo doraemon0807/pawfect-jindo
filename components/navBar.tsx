@@ -27,7 +27,7 @@ export default function NavBar() {
         <nav className="space-x-6 text-jindo-dark-gray font-semibold flex items-center">
           <Link
             href={`${aboutPath}`}
-            className={`hover:text-jindo-yellow pb-2 ${
+            className={`hover:text-jindo-yellow pb-2 text-center ${
               path === aboutPath ? "border-b-4" : ""
             }`}
           >
@@ -35,7 +35,7 @@ export default function NavBar() {
           </Link>
           <Link
             href={`${adoptionPath}`}
-            className={`hover:text-jindo-yellow pb-2 ${
+            className={`hover:text-jindo-yellow pb-2 text-center ${
               path === adoptionPath ? "border-b-4" : ""
             }`}
           >
@@ -43,7 +43,7 @@ export default function NavBar() {
           </Link>
           <Link
             href={`${dogsPath}`}
-            className={`hover:text-jindo-yellow pb-2 ${
+            className={`hover:text-jindo-yellow pb-2 text-center ${
               path === dogsPath ? "border-b-4" : ""
             }`}
           >
@@ -51,7 +51,7 @@ export default function NavBar() {
           </Link>
           <Link
             href={`${contactPath}`}
-            className={`hover:text-jindo-yellow pb-2 ${
+            className={`hover:text-jindo-yellow pb-2 text-center ${
               path === contactPath ? "border-b-4" : ""
             }`}
           >

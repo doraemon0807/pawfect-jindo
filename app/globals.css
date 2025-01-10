@@ -2,11 +2,18 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer base {
+  a {
+    @apply hover:text-jindo-white;
+  }
+  select,
+  select > option {
+    @apply border rounded-md cursor-pointer;
+  }
+}
+
 @layer components {
   .button {
-    @apply bg-jindo-black text-white px-6 py-3 rounded-md hover:bg-jindo-green transition-all duration-100;
-  }
-  .dropdown {
-    @apply p-2 border rounded-md cursor-pointer;
+    @apply bg-jindo-black text-jindo-white px-6 py-3 rounded-md hover:bg-jindo-green transition-all duration-100;
   }
 }
