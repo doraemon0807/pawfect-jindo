@@ -96,7 +96,7 @@ export default async function FindADog() {
 //         <p className="text-jindo-gray">Age: {dog.release_date}</p>
 //         <p className="text-jindo-gray">Breed: {dog.popularity}</p>
 //         <Link href={`/dog/${dog.id}`}>
-//           <button className="mt-4 w-full bg-jindo-black text-white py-2 px-4 rounded-md hover:bg-jindo-green">
+//           <button className="mt-4 w-full bg-jindo-black text-jindo-white py-2 px-4 rounded-md hover:bg-jindo-green">
 //             View {dog.title}
 //           </button>
 //         </Link>

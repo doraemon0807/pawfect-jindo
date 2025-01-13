@@ -41,7 +41,7 @@ export default function ContactUs() {
         <h2 className="text-2xl font-semibold mb-6 text-center">
           Send Us a Message
         </h2>
-        <form className="max-w-3xl mx-auto bg-white p-8 border rounded-lg shadow">
+        <form className="max-w-3xl mx-auto bg-jindo-white p-8 border rounded-lg shadow">
           <div className="mb-4">
             <label
               htmlFor="name"

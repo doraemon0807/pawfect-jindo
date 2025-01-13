@@ -63,7 +63,7 @@ export default function AdoptionProcess() {
         {steps.map((step) => (
           <div
             key={step.id}
-            className="flex flex-col md:flex-row items-center md:items-start md:space-x-6 p-6 border rounded-lg shadow-lg bg-white"
+            className="flex flex-col md:flex-row items-center md:items-start md:space-x-6 p-6 border rounded-lg shadow-lg bg-jindo-white"
           >
             <div className="text-4xl mb-4 md:mb-0">{step.icon}</div>
             <div>

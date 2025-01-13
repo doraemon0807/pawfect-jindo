@@ -2,7 +2,7 @@ import Link from "next/link";
 
 export default function Footer() {
   return (
-    <footer className="bg-jindo-darker-gray text-white py-8">
+    <footer className="bg-jindo-darker-gray text-jindo-white py-8">
       <div className="max-w-7xl mx-auto px-6 text-center">
         <p>&copy; Pawfect Jindo. All rights reserved.</p>
         <div className="mt-4 flex gap-6 justify-center *:text-jindo-light-gray">

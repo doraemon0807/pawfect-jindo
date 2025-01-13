@@ -12,7 +12,7 @@ export default function NavBar() {
   const donatePath = "/donate";
 
   return (
-    <header className="bg-white shadow-md py-4">
+    <header className="bg-jindo-white shadow-md py-4">
       <div className="max-w-7xl mx-auto px-6 flex justify-between items-center">
         {/* Logo */}
         <Link href="/">

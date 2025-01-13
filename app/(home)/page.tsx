@@ -6,7 +6,7 @@ export default function Home() {
       {/* Hero Section */}
       <section className="relative h-[500px] bg-jindo-lighter-gray">
         <div className="absolute inset-0 bg-jindo-black opacity-50"></div>
-        <div className="absolute inset-0 flex justify-center items-center text-center text-white px-4">
+        <div className="absolute inset-0 flex justify-center items-center text-center text-jindo-white px-4">
           <h1 className="text-4xl md:text-5xl font-bold leading-tight">
             Adopt a Jindo - Your Perfect Companion
           </h1>
@@ -17,7 +17,7 @@ export default function Home() {
       </section>
 
       {/* About Section */}
-      <section id="about" className="py-16 bg-white">
+      <section id="about" className="py-16 bg-jindo-white">
         <div className="max-w-7xl mx-auto px-6 text-center">
           <h2 className="text-3xl font-semibold text-jindo-darker-gray">
             About the Jindo Breed
@@ -67,7 +67,7 @@ export default function Home() {
       </section>
 
       {/* Dog Listings Section */}
-      <section id="dogs" className="py-16 bg-white">
+      <section id="dogs" className="py-16 bg-jindo-white">
         <div className="max-w-7xl mx-auto px-6 text-center">
           <h2 className="text-3xl font-semibold text-jindo-darker-gray">
             Meet Our Jindos

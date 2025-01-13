@@ -54,7 +54,7 @@ export default function Adopt() {
             className="p-6 border rounded-lg shadow-lg text-center"
           >
             <h2 className="text-xl font-semibold mb-2">{option.title}</h2>
-            <p className="text-2xl font-bold text-primary mb-2">
+            <p className="text-2xl font-bold text-jindo-blue mb-2">
               {option.amount}
             </p>
             <p className="text-jindo-gray mb-4">{option.description}</p>
