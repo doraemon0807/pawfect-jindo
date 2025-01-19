@@ -62,7 +62,7 @@ export const Login = async (prevState: any, formData: FormData) => {
       // Log user in
       const session = await getSession();
       session.id = user!.id;
-      redirect("/admin-page");
+      redirect("/admin/dashboard");
     } else {
       return {
         fieldErrors: {
