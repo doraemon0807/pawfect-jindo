@@ -56,7 +56,7 @@ export const Login = async (prevState: any, formData: FormData) => {
     // If the user is found, check password hash
     const ok = await bcrypt.compare(
       result.data.password,
-      user!.password ?? "xxxx"
+      user!.password ?? "xxx"
     );
     if (ok) {
       // Log user in
